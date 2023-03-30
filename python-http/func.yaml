@@ -1,0 +1,22 @@
+specVersion: 0.35.0
+name: python-http
+runtime: python
+registry: ""
+image: ""
+imageDigest: ""
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
