@@ -1,0 +1,23 @@
+specVersion: 0.35.0
+name: node-cloudevents
+runtime: node
+registry: ""
+image: ""
+imageDigest: ""
+invoke: cloudevent
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
