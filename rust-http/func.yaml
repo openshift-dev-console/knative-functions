@@ -1,0 +1,23 @@
+specVersion: 0.35.0
+name: rust-http
+runtime: rust
+registry: ""
+image: ""
+imageDigest: ""
+build:
+  buildpacks:
+  - docker.io/paketocommunity/rust
+  builder: ""
+  buildEnvs: []
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /health/liveness
+    readiness: /health/readiness
