@@ -9,7 +9,7 @@ if [[ `git status --porcelain` ]]; then
     exit -1
 fi
 
-for language in go node python quarkus rust springboot; do
+for language in go node python quarkus rust springboot typescript; do
     for template in cloudevents http; do
         rm -rf "$language-$template"
         func create -l "$language" -t "$template" "$language-$template"
