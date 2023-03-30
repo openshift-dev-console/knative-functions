@@ -15,6 +15,8 @@ for language in go node python quarkus rust springboot; do
         func create -l "$language" -t "$template" "$language-$template"
         sed '/created:/d' -i "$language-$template/func.yaml"
         git add "$language-$template"
-        git commit -m "Create $language $template"
+        if [[ ! `git status --porcelain` ]]; then
+            git commit -m "Create $language $template"
+        fi
     done
 done
