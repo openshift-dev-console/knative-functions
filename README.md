@@ -1,8 +1,8 @@
 # Knative func examples
 
-Templates created with `func create`
+Templates created with `func create` / `kn func create`
 
-## Currently available templates
+## Available templates
 
 | Language    | Format/Template | Folder / context dir     | Dev console status |
 |-------------|-----------------|--------------------------|--------------------|
