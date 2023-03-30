@@ -8,7 +8,7 @@ invoke: cloudevent
 build:
   buildpacks:
   - docker.io/paketocommunity/rust
-  builder: ""
+  builder: s2i
   buildEnvs: []
 run:
   volumes: []

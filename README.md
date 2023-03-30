@@ -1,6 +1,6 @@
 # Knative func examples
 
-Templates created with `func create` / `kn func create`
+Templates created with `[kn] func create`
 
 ## Available templates
 

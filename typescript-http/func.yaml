@@ -6,7 +6,7 @@ image: ""
 imageDigest: ""
 build:
   buildpacks: []
-  builder: ""
+  builder: s2i
   buildEnvs:
   - name: BP_NODE_RUN_SCRIPTS
     value: build

@@ -9,7 +9,7 @@ build:
   buildpacks:
   - paketo-buildpacks/go-dist
   - ghcr.io/boson-project/go-function-buildpack:tip
-  builder: ""
+  builder: s2i
   buildEnvs: []
 run:
   volumes: []
