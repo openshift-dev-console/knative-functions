@@ -1,0 +1,28 @@
+specVersion: 0.35.0
+name: springboot-http
+runtime: springboot
+registry: ""
+image: ""
+imageDigest: ""
+build:
+  buildpacks: []
+  builder: ""
+  buildEnvs:
+  - name: BP_NATIVE_IMAGE
+    value: "false"
+  - name: BP_JVM_VERSION
+    value: "17"
+  - name: BP_MAVEN_BUILD_ARGUMENTS
+    value: -Pnative -Dmaven.test.skip=true --no-transfer-progress package
+run:
+  volumes: []
+  envs: []
+deploy:
+  namespace: ""
+  remote: false
+  annotations: {}
+  options: {}
+  labels: []
+  healthEndpoints:
+    liveness: /actuator/health
+    readiness: /actuator/health
